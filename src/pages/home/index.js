@@ -1,17 +1,15 @@
 // Home Component
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { useUser } from '../hooks/useUser';
+import { useNavigate } from 'react-router'; // React Router v7
 
 function Home() {
-  const user = useUser();
+  const navigate = useNavigate();
   
   return (
     <div>
-      <h1>Welcome Home{user ? `, ${user.name}` : ''}!</h1>
-      <p>This is the home page.</p>
-      <p>You are logged in as: {user?.name || 'Guest'}</p>
-      <Link to="/dashboard">Go to Dashboard</Link>
+      <h1>Welcome to the New Home</h1>
+      <p>This is the updated home page.</p>
+      <button onClick={() => navigate('/dashboard')}>Go to Dashboard</button>
     </div>
   );
 }
