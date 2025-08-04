@@ -1,0 +1,9 @@
+{
+  "name": "git-move-conflict-demo",
+  "version": "1.0.0",
+  "description": "Demo repository for Git file move conflict resolution",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-router-dom": "^6.0.0"
+  }
+}
